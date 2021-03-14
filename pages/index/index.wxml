@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <van-button bind:click="showPopup" wx:if="{{!hasUserInfo}}" bindtap="getUserProfile">授权登录          </van-button>
+   <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+

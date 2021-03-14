@@ -1,0 +1,6 @@
+<view class="nav_content" style="height:{{navbar*2 + 20}}px;">
+  <image wx:if="{{navBarImg}}" class="nav_img"  mode="widthFix"  src="{{navBarImg}}"/>
+  <!-- 返回按钮 -->
+  <!-- 标题 -->
+  <view style='line-height: {{navbar*2 + 44}}px;' class="nav_title">{{title}}</view>
+</view>

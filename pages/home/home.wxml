@@ -1,0 +1,9 @@
+<!-- <view class="home">
+  <nav-bar navbar="{{navbar}}" navBarImg="{{navBarImg}}" title="{{title}}"></nav-bar>
+  <image src="{{navBarImg}}" mode="widthFix" class="bg-img"/>
+  <view class="home_content" style="margin-top:{{}}">
+    <view class="swiper_content">
+      <van-button bindtap="chooseMapViewTap">选择位置</van-button>
+    </view>
+  </view>
+</view> -->
