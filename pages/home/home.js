@@ -87,7 +87,15 @@ Page({
   onReady: function () {
     
   },
-
+  toLogs(){
+    wx.navigateTo({
+      url: '/pages/logs/logs?name=mixue&age=18',
+      success: function(res){
+        //回调包含eventChannel对象，通过emit给跳转的页面发送数据
+        res.eventChannel.emit('changeLogsData',{data: 'hello logs'})
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

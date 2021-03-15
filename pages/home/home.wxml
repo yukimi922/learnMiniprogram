@@ -7,3 +7,7 @@
     </view>
   </view>
 </view> -->
+<view>
+  <!-- <navigator open-type='navigate' url="/pages/logs/logs?name=mixue">跳转至另一个页面并传递数据</navigator> -->
+  <view bindtap="toLogs">跳转至另一个页面并传递参数</view>
+</view>
