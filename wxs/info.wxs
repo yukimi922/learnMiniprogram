@@ -1,0 +1,8 @@
+var text = "hello wxs!!!"
+function fun(num1, num2) {
+  return num1 + num2
+}
+module.exports = {
+  text: text,
+  fun: fun
+}

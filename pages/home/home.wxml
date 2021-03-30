@@ -11,3 +11,37 @@
   <!-- <navigator open-type='navigate' url="/pages/logs/logs?name=mixue">跳转至另一个页面并传递数据</navigator> -->
   <view bindtap="toLogs">跳转至另一个页面并传递参数</view>
 </view>
+<text>hello word \n</text>
+
+<text user-select="{{true}}">Nihao word</text>
+
+<view>哈哈哈哈哈哈哈</view>
+<text selectable>kkkk</text>
+
+<button bindtap="chooseImg">选择图片</button>
+
+<import src="/templates/btn.wxml" />
+<!-- <include src="/templates/btn.wxml"/> -->
+<template is="btn" data="{{text:'我是按钮'}}"></template>
+
+
+
+
+<view>------------------------------------------------</view>
+
+
+<!-- 必须有module起名才可以使用 -->
+<!-- <wxs src="../../wxs/info.wxs" module="info"/> -->
+
+<wxs module="info">
+  var text = "hello wxs!!!"
+  function fun(num1, num2) {
+    return num1 + num2
+  }
+  module.exports = {
+    text: text,
+    fun: fun
+  }
+</wxs>
+
+<view>{{info.text}}</view>
